@@ -1,1 +1,10 @@
-
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/relay.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/relay", "dest": "api/relay.js" }
+    ]
+  }
+  
